@@ -1,0 +1,108 @@
+{
+    "site": {
+      "title": "Ghaisan Utama Indomedia",
+      "sections": {
+        "home": {
+          "headline": "Berkontribusi dalam Pembangunan dan Kreativitas",
+          "description": "Menghadirkan layanan berkualitas dalam bidang Event Organizer, Konstruksi, dan Multimedia.",
+          "cta": {
+            "text": "Lihat Layanan Kami",
+            "href": "#services"
+          },
+          "backgroundImage": "path/to/hero-image.jpg"
+        },
+        "about": {
+          "headline": "Tentang Kami",
+          "description": "CV. Ghaisan Utama Indomedia, didirikan pada tahun 2009, merupakan perusahaan yang bergerak dalam bidang Event Organizer, Konstruksi, dan Multimedia dengan berbagai pengalaman di industri ini.",
+          "timeline": [
+            {
+              "year": "2009",
+              "event": "Pendirian AL PRODUCTION sebagai perusahaan perseorangan."
+            },
+            {
+              "year": "2013",
+              "event": "Pembentukan CV. Ghaisan Utama Indomedia yang menaungi berbagai jenis usaha di bidang hiburan dan konstruksi."
+            }
+          ]
+        },
+        "services": {
+          "headline": "Layanan Kami",
+          "cards": [
+            {
+              "icon": "fas fa-calendar-alt",
+              "title": "Event Organizer",
+              "description": "Kami menyediakan layanan manajemen acara yang profesional dan terorganisir."
+            },
+            {
+              "icon": "fas fa-video",
+              "title": "Produksi Multimedia",
+              "description": "Produksi film, video, dan desain grafis berkualitas tinggi."
+            },
+            {
+              "icon": "fas fa-hard-hat",
+              "title": "Konstruksi",
+              "description": "Layanan konstruksi yang meliputi perencanaan hingga eksekusi."
+            }
+          ]
+        },
+        "portfolio": {
+          "headline": "Portofolio",
+          "items": [
+            {
+              "image": "path/to/image1.jpg",
+              "description": "Produksi Film 'Uang Panai'"
+            },
+            {
+              "image": "path/to/image2.jpg",
+              "description": "Pameran Mobil GIIAS Makassar"
+            }
+          ]
+        },
+        "contact": {
+          "headline": "Kontak Kami",
+          "address": "Jl. Bakti Raya, Komp Ruko Bakti Soho Center No. 5, Tamamaung, Makassar",
+          "phone": "+62 811 450 8000",
+          "email": "info@ghaisanindomedia.com",
+          "mapEmbed": "https://maps.google.com/maps?q=Jl.%20Bakti%20Raya,%20Komp%20Ruko%20Bakti%20Soho%20Center%20No.%205,%20Tamamaung,%20Makassar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        },
+        "legalitas": {
+          "headline": "Legalitas",
+          "items": [
+            {
+              "label": "NIB",
+              "value": "1009210081414"
+            },
+            {
+              "label": "NPWP",
+              "value": "03.315.973.2-805.000"
+            },
+            {
+              "label": "Pengesahan Kemenkumham",
+              "value": "AHU-0022745-AH.01.16 Tahun 2021"
+            }
+          ]
+        }
+      },
+      "footer": {
+        "text": "&copy; 2024 Ghaisan Utama Indomedia. All rights reserved.",
+        "socialLinks": [
+          {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/ghaisanindomedia",
+            "icon": "fab fa-facebook-f"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/ghaisanindomedia",
+            "icon": "fab fa-instagram"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/company/ghaisanindomedia",
+            "icon": "fab fa-linkedin-in"
+          }
+        ]
+      }
+    }
+  }
+  
