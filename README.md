@@ -1,4 +1,3 @@
-
 <html lang="id">
 
 <head>
@@ -192,27 +191,26 @@
         }
 
         .portfolio-gallery {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: nowrap; /* Mencegah logo berpindah ke baris berikutnya */
-    overflow-x: auto; /* Menambahkan scroll horizontal jika jumlah logo melebihi lebar layar */
-}
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
 
-.gallery-item {
-    flex: 0 0 auto; /* Mencegah item mengecil */
-    text-align: center;
-    margin: 0;
-}
+        .gallery-item {
+            flex: 0 0 auto;
+            text-align: center;
+            margin: 0;
+        }
 
-.gallery-item img {
-    width: 150px; /* Atur lebar logo */
-    height: 150px; /* Atur tinggi logo */
-    object-fit: contain; /* Menjaga proporsi logo dengan penyesuaian ukuran */
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
+        .gallery-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
 
         .gallery-item img:hover {
             transform: scale(1.05);
@@ -299,7 +297,54 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        @media only screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            .card {
+                flex: 1 1 calc(100% - 40px);
+            }
+
+            .services-cards,
+            .portfolio-gallery {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .portfolio-gallery {
+                overflow-x: scroll;
+            }
+
+            .modal-content img {
+                max-width: 80%;
+                margin: 5px;
+            }
+        }
     </style>
+</head>
+
+<body>
+    <!-- Konten HTML lainnya... -->
+</body>
+
+</html>
+
 </head>
 
 <body>
