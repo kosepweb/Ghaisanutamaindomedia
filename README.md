@@ -17,7 +17,7 @@
         nav {
             background-color: #1d1d1d;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,7 +34,7 @@
         }
 
         nav .logo {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             letter-spacing: 1px;
             color: #ff6f61;
@@ -43,7 +43,7 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
 
         nav ul li a {
@@ -78,7 +78,7 @@
         }
 
         .hero-content h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             margin: 0;
             padding: 0;
             line-height: 1.2;
@@ -86,7 +86,7 @@
         }
 
         .hero-content p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-top: 20px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
@@ -98,7 +98,7 @@
         }
 
         .section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             position: relative;
         }
 
@@ -118,7 +118,7 @@
 
         h2 {
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
@@ -128,7 +128,7 @@
         h2::after {
             content: '';
             display: block;
-            width: 60px;
+            width: 80px;
             height: 4px;
             background: #ff6f61;
             margin: 10px auto 0;
@@ -138,12 +138,12 @@
         .timeline {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
         }
 
         .timeline-item {
             position: relative;
-            padding: 15px;
+            padding: 20px;
             border-left: 4px solid #ff6f61;
             background-color: #fff;
             border-radius: 10px;
@@ -151,7 +151,7 @@
         }
 
         .timeline-item h3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 10px;
             color: #333;
         }
@@ -164,18 +164,18 @@
         .services-cards {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
         }
 
         .card {
             background-color: #fff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            flex: 1 1 calc(50% - 30px);
-            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            margin: 20px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
@@ -186,13 +186,13 @@
 
         .card h3 {
             margin-bottom: 15px;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             color: #333;
         }
 
         .portfolio-gallery {
             display: flex;
-            gap: 10px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: nowrap;
             overflow-x: auto;
@@ -205,8 +205,8 @@
         }
 
         .gallery-item img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             object-fit: contain;
             border-radius: 10px;
             transition: transform 0.3s;
@@ -220,20 +220,20 @@
             background-color: #1d1d1d;
             color: #fff;
             text-align: center;
-            padding: 15px 0;
+            padding: 20px 0;
         }
 
         .footer-socials {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             margin-top: 10px;
         }
 
         .footer-socials a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
 
@@ -335,234 +335,92 @@
                 max-width: 80%;
                 margin: 5px;
             }
-
-            .footer-socials a {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="logo">Ghaisan Utama Indomedia</div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">Tentang Kami</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-            <li><a href="#contact">Kontak</a></li>
-            <li><a href="#legalitas">Legalitas</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1></h1>
-            <p></p>
+            <h1>Welcome to Ghaisan Utama Indomedia</h1>
+            <p>Your trusted partner for digital solutions</p>
         </div>
     </section>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>2009</h3>
-                    <p>Pada tahun 2009, bendera ALPRODUCTION beralih menjadi perusahaan perseorangan. Berfokus pada bidang Event Organizer dan Profesional Exhibition Organizer, kami memulai perjalanan ini dengan pengalaman, kemampuan, dan keterampilan sumber daya manusia yang terlibat sejak awal, sehingga dapat bekerja dengan baik.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2011</h3>
-                    <p>Bisnis berkembang ke berbagai bidang. Pada tahun 2011, terbentuk Media Majalah, Eventku Magazine.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2012</h3>
-                    <p>Terbentuk designeRoom, Konsultan Perencana & Konstruksi, Konsultan Pengawasan, Pelaksana Konstruksi, Pengelolaan Real Estate, Pekerjaan Interior/Eksterior.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2013</h3>
-                    <p>Terbentuk CV. Ghaisan Utama Indomedia yang menaungi berbagai jenis usaha di bidang entertaind dan konstruksi.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2014</h3>
-                    <p>Terbentuk jasa Multimedia (Photo, Video & Design Grafis).</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2015</h3>
-                    <p>Terbentuk Finisia Production, Production House yang memproduksi Film Layar lebar, Series & Iklan Cinematography.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2018</h3>
-                    <p>Terbentuk Kopi Batas (KOBA), PT. Ghaisan Maharga Perkasa & PT. Ghaisan Utama Indoprima.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2020</h3>
-                    <p>Terbentuk Yayasan Insan Sahasra Zawawi, dengan brand Gerakan 1.000 Kebaikan. Kami berkomitmen memberikan pelayanan produk dan jasa yang berkualitas, konsisten, dan memiliki nilai tambah demi tercapainya tujuan bersama. Dengan dukungan sumber daya manusia yang berkemampuan tinggi dan berpengalaman di bidang masing-masing, Ghaisan Utama Indomedia mampu menyediakan berbagai jasa di bidang Konstruksi, Multimedia, & Event Organizer dengan prinsip kemitraan yang selalu mengedepankan kualitas dan kepuasan (Value of Money).</p>
-                </div>
+    <!-- Experience Section -->
+    <section class="container section" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Web Developer</h3>
+                <p>Developed and maintained multiple web projects using the latest technologies.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Graphic Designer</h3>
+                <p>Created visually appealing graphics for various clients in different industries.</p>
             </div>
         </div>
     </section>
-    
 
-    <section id="services" class="section services">
-        <div class="container">
-            <h2>VISI, MISI & SERVICES</h2>
-            <div class="services-cards">
-                <div class="card">
-                    <h3>VISI</h3>
-                    <p>Menjadi Pemimpin Industri Kreatif di Indonesia Timur</p>
-                </div>
-                <div class="card">
-                    <h3>MISI</h3>
-                    <p>Menjadi parner bisnis yang Realible dengan menanamkan nilai Profesionalisme dalam menciptakan karya yang mengesankan</p>
-                </div>
-                <div class="card">
-                    <img src="icon2.png" alt="Layanan 1 Icon" style="width: 200px; height: 100px;">
-                    <h3>Event Organizer Services</h3>
-                    <p>DIdirikan tahun 2009, dan sampai sekarang telah menjadi partner terpercaya oleh banyak perusahaan dan pribadi, untuk keperluan event organizing. Mulai dari acara formal ataupun non-formal yang selalu berhasil meninggalkan kesan tersendiri bagi client</p>
-                </div>
-                <div class="card">
-                    <img src="icon23.png" alt="Layanan 2 Icon" style="width: 200px; height: 100px;">
-                    <h3>Contruction Services</h3>
-                    <p>Didirikan ditahun 2012 sampai sekarang, didukung tim teknis dan arsitek berpengalaman, menjadi Konsultan Perencanaan serta Pelaksanaan Konstruksi Perumahaan, Pengelolaan Real Estate, Renovasi Rumah dan Kantor Eksterior/Interior</p>
-                </div>
-                <div class="card">
-                    <img src="icon3.png" alt="Layanan 3 Icon" style="width: 200px; height: 100px;">
-                    <h3>Cinematography Services</h3>
-                    <p>Didirikan ditahun 2015, dan sampai sekarang telah membuat beberapa film layar lebar dengan jumlah penoton yang lebih dari lima ratus ribu orang. Disamping itu Finisia, juga telah memproduksi beberapa video, berupa compay profile, comercial dan lain-lain.</p>
-                </div>
+    <!-- Services Section -->
+    <section class="container section" id="services">
+        <h2>Services</h2>
+        <div class="services-cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>We build responsive and dynamic websites tailored to your business needs.</p>
+            </div>
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>Our designs are creative and aligned with your brand identity.</p>
             </div>
         </div>
     </section>
-    
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <div class="container">
-            <h2>Portofolio</h2>
-            <div class="portfolio-gallery">
-                <!-- Project 1 -->
-                <div class="gallery-item">
-                    <img id="projectLogo1" src="finisia.png" alt="Project 1 Logo">
-                </div>
-                <!-- Project 2 -->
-                <div class="gallery-item">
-                    <img id="projectLogo2" src="LOGO-ALPRO1.png" alt="Project 2 Logo">
-                </div>
-                <!-- Project 3 -->
-                <div class="gallery-item">
-                    <img id="projectLogo3" src="drlogo.png" alt="Project 3 Logo">
-                </div>
+    <section class="container section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="gallery-item">
+                <img src="portfolio1.jpg" alt="Portfolio 1">
+            </div>
+            <div class="gallery-item">
+                <img src="portfolio2.jpg" alt="Portfolio 2">
             </div>
         </div>
     </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <div class="container">
-        <h2>Kontak Kami</h2>
-        <p>Untuk informasi lebih lanjut atau konsultasi, silakan hubungi kami melalui:</p>
-        <ul>
-            <li>Email: <a href="mailto:gumedia.po@gmail.com">info@ghaisanindomedia.com</a></li>
-            <li>Telepon: <a href="tel:+621234567890">+62 123-4567-890</a></li>
-            <li>Alamat: Jl. Bakti Komp Ruko Bakti soho center, Kota Makassar, Sulawesi Selatan</li>
-        </ul>
-    </div>
-</section>
-<footer>
-    <p>&copy; 2009-2024 Ghaisan Utama Indomedia. All rights reserved.</p>
-    <div class="footer-socials">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="https://wa.me/621234567890" target="_blank">WhatsApp</a>
-    </div>
-</footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ghaisan Utama Indomedia. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@ghaisan.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <iframe src="https://open.spotify.com/embed/track/yourtrackid" width="300" height="80" allowtransparency="true" allow="encrypted-media"></iframe>
+    </footer>
 
-
-    <!-- Modal for Gallery 1 -->
-    <div id="galleryModal1" class="modal">
+    <!-- Modal Section -->
+    <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <div class="modal-content">
-            <img src="up1.jpg" alt="Image 1">
-            <img src="halomakassar.jpg" alt="Image 2">
-            <img src="anakmudapalsu.jpg" alt="Image 3">
-            <img src="keluarmain.jpg" alt="Image 4">
-            <img src="up2.jpg" alt="Image 5">
+            <img src="portfolio1.jpg" alt="Portfolio 1">
+            <img src="portfolio2.jpg" alt="Portfolio 2">
         </div>
     </div>
-
-    <!-- Modal for Gallery 2 -->
-    <div id="galleryModal2" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-content">
-            <img src="giias15.jpg" alt="Image 1">
-            <img src="giias16.jpg" alt="Image 2">
-            <img src="GIIAS17.jpg" alt="Image 3">
-            <img src="GIIAS18.jpg" alt="Image 4">
-            <img src="giias19.jpg" alt="Image 5">
-            <img src="rei.jpg" alt="Image 5">
-            <img src="karangtaruna.jpg" alt="Image 5">
-            <img src="FEED BMO 1 copy.jpg" alt="Image 5">
-        </div>
-    </div>
-
-    <!-- Modal for Gallery 3 -->
-    <div id="galleryModal3" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-content">
-            <img src="dr1.jpg" alt="Image 1">
-            <img src="dr2.jpg" alt="Image 2">
-            <img src="dr3.jpg" alt="Image 3">
-            <img src="dr4.jpg" alt="Image 4">
-            <img src="dr5.jpg" alt="Image 5">
-            <img src="dr6.jpg" alt="Image 4">
-        </div>
-    </div>
-
-    <script>
-        // Navbar scroll effect
-        window.onscroll = function () {
-            var navbar = document.getElementById('navbar');
-            if (window.pageYOffset > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        };
-
-        // Function to open modal for each project
-        function openModal(modalId) {
-            var modal = document.getElementById(modalId);
-            modal.style.display = 'flex';
-        }
-
-        // Function to close modal
-        var closeButtons = document.getElementsByClassName('close');
-        for (var i = 0; i < closeButtons.length; i++) {
-            closeButtons[i].onclick = function () {
-                this.parentElement.style.display = 'none';
-            };
-        }
-
-        // Close modal if user clicks anywhere outside of the modal content
-        window.onclick = function (event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        }
-
-        // Add event listeners to the project logos
-        document.getElementById('projectLogo1').addEventListener('click', function () {
-            openModal('galleryModal1');
-        });
-        document.getElementById('projectLogo2').addEventListener('click', function () {
-            openModal('galleryModal2');
-        });
-        document.getElementById('projectLogo3').addEventListener('click', function () {
-            openModal('galleryModal3');
-        });
-    </script>
 </body>
 
 </html>
