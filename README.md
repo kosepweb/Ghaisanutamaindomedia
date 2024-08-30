@@ -17,7 +17,7 @@
         nav {
             background-color: #1d1d1d;
             color: #fff;
-            padding: 15px 30px;
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,7 +34,7 @@
         }
 
         nav .logo {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             letter-spacing: 1px;
             color: #ff6f61;
@@ -43,7 +43,7 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
 
         nav ul li a {
@@ -78,7 +78,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             margin: 0;
             padding: 0;
             line-height: 1.2;
@@ -86,7 +86,7 @@
         }
 
         .hero-content p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-top: 20px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
@@ -98,7 +98,7 @@
         }
 
         .section {
-            padding: 80px 20px;
+            padding: 60px 20px;
             position: relative;
         }
 
@@ -118,7 +118,7 @@
 
         h2 {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 2rem;
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
@@ -128,7 +128,7 @@
         h2::after {
             content: '';
             display: block;
-            width: 80px;
+            width: 60px;
             height: 4px;
             background: #ff6f61;
             margin: 10px auto 0;
@@ -138,12 +138,12 @@
         .timeline {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
 
         .timeline-item {
             position: relative;
-            padding: 20px;
+            padding: 15px;
             border-left: 4px solid #ff6f61;
             background-color: #fff;
             border-radius: 10px;
@@ -151,7 +151,7 @@
         }
 
         .timeline-item h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 10px;
             color: #333;
         }
@@ -164,18 +164,18 @@
         .services-cards {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
         }
 
         .card {
             background-color: #fff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            flex: 1 1 calc(33% - 40px);
-            margin: 20px;
+            flex: 1 1 calc(50% - 30px);
+            margin: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
@@ -186,13 +186,13 @@
 
         .card h3 {
             margin-bottom: 15px;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #333;
         }
 
         .portfolio-gallery {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: nowrap;
             overflow-x: auto;
@@ -205,8 +205,8 @@
         }
 
         .gallery-item img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
             border-radius: 10px;
             transition: transform 0.3s;
@@ -220,20 +220,20 @@
             background-color: #1d1d1d;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
         .footer-socials {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
             margin-top: 10px;
         }
 
         .footer-socials a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             transition: color 0.3s;
         }
 
@@ -298,7 +298,6 @@
             cursor: pointer;
         }
 
-        /* Media queries untuk perangkat seluler */
         @media only screen and (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -307,45 +306,32 @@
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .hero-content p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
-            .services-cards,
-            .portfolio-gallery {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .portfolio-gallery {
-                overflow-x: scroll;
-            }
-
-            .modal-content img {
-                max-width: 80%;
-                margin: 5px;
-            }
-
-            .timeline {
-                gap: 10px;
-            }
-
-            .timeline-item {
-                padding: 15px;
-                font-size: 0.9rem;
+            h2 {
+                font-size: 1.8rem;
             }
 
             .card {
-                flex: 1 1 calc(100% - 40px);
-                margin: 10px 0;
+                flex: 1 1 calc(100% - 30px);
+            }
+
+            .modal-content img {
+                max-width: 90%;
+                margin: 5px;
+            }
+
+            .footer-socials a {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
-
 <body>
     <!-- Navigation -->
     <nav id="navbar">
