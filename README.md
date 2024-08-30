@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -58,9 +59,40 @@
             transform: scale(1.05);
         }
 
+        /* Hamburger menu for small screens */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links.active {
+            display: block;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background-color: #1d1d1d;
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+        }
+
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('') no-repeat center center/cover;
+                url('foto1.jpg') no-repeat center center/cover;
             height: 100vh;
             color: #fff;
             display: flex;
@@ -305,6 +337,28 @@
                 gap: 10px;
             }
 
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #333;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
             .hero-content h1 {
                 font-size: 2.5rem;
             }
@@ -313,114 +367,147 @@
                 font-size: 1.2rem;
             }
 
-            h2 {
-                font-size: 2.2rem;
+            .timeline {
+                gap: 15px;
             }
 
             .card {
                 flex: 1 1 calc(100% - 40px);
             }
 
-            .services-cards,
             .portfolio-gallery {
-                flex-direction: column;
-                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
 
-            .portfolio-gallery {
-                overflow-x: scroll;
+            .gallery-item {
+                flex: 1 1 calc(50% - 20px);
             }
 
             .modal-content img {
-                max-width: 80%;
-                margin: 5px;
+                max-width: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
+    <nav>
         <div class="logo">Ghaisan Utama Indomedia</div>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to Ghaisan Utama Indomedia</h1>
-            <p>Your trusted partner for digital solutions</p>
+            <h1>Selamat Datang di Ghaisan Utama Indomedia</h1>
+            <p>Kami menghadirkan solusi kreatif untuk kebutuhan bisnis Anda.</p>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="container section" id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Web Developer</h3>
-                <p>Developed and maintained multiple web projects using the latest technologies.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Graphic Designer</h3>
-                <p>Created visually appealing graphics for various clients in different industries.</p>
-            </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang bergerak di bidang digital marketing, desain grafis, dan pengembangan
+                web.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="container section" id="services">
-        <h2>Services</h2>
-        <div class="services-cards">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>We build responsive and dynamic websites tailored to your business needs.</p>
-            </div>
-            <div class="card">
-                <h3>Graphic Design</h3>
-                <p>Our designs are creative and aligned with your brand identity.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="container section" id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-gallery">
-            <div class="gallery-item">
-                <img src="portfolio1.jpg" alt="Portfolio 1">
-            </div>
-            <div class="gallery-item">
-                <img src="portfolio2.jpg" alt="Portfolio 2">
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="services-cards">
+                <div class="card">
+                    <h3>Desain Grafis</h3>
+                    <p>Kami menyediakan layanan desain grafis yang menarik untuk kebutuhan promosi Anda.</p>
+                </div>
+                <div class="card">
+                    <h3>Pembuatan Website</h3>
+                    <p>Kami membuat website yang responsif dan user-friendly untuk bisnis Anda.</p>
+                </div>
+                <div class="card">
+                    <h3>Digital Marketing</h3>
+                    <p>Kami membantu meningkatkan visibilitas online bisnis Anda melalui strategi pemasaran digital.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portofolio Kami</h2>
+            <div class="portfolio-gallery">
+                <div class="gallery-item">
+                    <img src="finisia.png" alt="Project 1 Logo" onclick="openModal()">
+                </div>
+                <div class="gallery-item">
+                    <img src="finisia2.png" alt="Project 2 Logo" onclick="openModal()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Email: info@ghaisanutama.com</p>
+            <p>WhatsApp: +62 812 3456 7890</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Ghaisan Utama Indomedia. All rights reserved.</p>
+        <p>© 2024 Ghaisan Utama Indomedia. All rights reserved.</p>
         <div class="footer-socials">
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:info@ghaisan.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/ghaisanutama" target="_blank">Instagram</a>
+            <a href="mailto:info@ghaisanutama.com">Email</a>
         </div>
-        <iframe src="https://open.spotify.com/embed/track/yourtrackid" width="300" height="80" allowtransparency="true" allow="encrypted-media"></iframe>
     </footer>
 
-    <!-- Modal Section -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
+    <div id="portfolioModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content">
-            <img src="portfolio1.jpg" alt="Portfolio 1">
-            <img src="portfolio2.jpg" alt="Portfolio 2">
+            <img src="finisia.png" alt="Portfolio 1">
+            <img src="finisia2.png" alt="Portfolio 2">
         </div>
     </div>
+
+    <script>
+        // Navbar scroll change
+        window.onscroll = function () {
+            const navbar = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        // Toggle menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('open');
+        }
+
+        // Modal handling
+        function openModal() {
+            document.getElementById("portfolioModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("portfolioModal").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
