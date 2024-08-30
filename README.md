@@ -60,7 +60,7 @@
 
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('foto1.jpg') no-repeat center center/cover;
+            url('') no-repeat center center/cover;
             height: 100vh;
             color: #fff;
             display: flex;
