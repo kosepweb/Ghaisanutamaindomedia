@@ -306,23 +306,33 @@
             }
 
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .hero-content p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             h2 {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
 
             .card {
-                flex: 1 1 calc(100% - 30px);
+                flex: 1 1 calc(100% - 40px);
+            }
+
+            .services-cards,
+            .portfolio-gallery {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .portfolio-gallery {
+                overflow-x: scroll;
             }
 
             .modal-content img {
-                max-width: 90%;
+                max-width: 80%;
                 margin: 5px;
             }
 
