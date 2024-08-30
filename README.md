@@ -298,6 +298,7 @@
             cursor: pointer;
         }
 
+        /* Media queries untuk perangkat seluler */
         @media only screen and (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -311,14 +312,6 @@
 
             .hero-content p {
                 font-size: 1.2rem;
-            }
-
-            h2 {
-                font-size: 2.2rem;
-            }
-
-            .card {
-                flex: 1 1 calc(100% - 40px);
             }
 
             .services-cards,
@@ -335,16 +328,22 @@
                 max-width: 80%;
                 margin: 5px;
             }
+
+            .timeline {
+                gap: 10px;
+            }
+
+            .timeline-item {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+
+            .card {
+                flex: 1 1 calc(100% - 40px);
+                margin: 10px 0;
+            }
         }
     </style>
-</head>
-
-<body>
-    <!-- Konten HTML lainnya... -->
-</body>
-
-</html>
-
 </head>
 
 <body>
